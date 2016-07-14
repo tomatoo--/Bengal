@@ -1,0 +1,12 @@
+<%
+function addScripts(list) {
+  if (Array.isArray(list) === true) {
+    list.forEach(function(elm, i, ary) {
+-%>
+  <script src="<%= JS_PATH %><%= elm %>"></script>
+<%
+    });
+  }
+}
+addScripts(addScriptsList);
+-%>

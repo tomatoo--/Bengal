@@ -1,0 +1,23 @@
+<% include ../../../common/templates/_config -%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<% include ../../../common/templates/base/_meta -%>
+
+  <title><%= PAGES[PAGE_ID].title %></title>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="<%= CSS_PATH %>app.css">
+<% include ../../../common/templates/functions/_addStyles -%>
+
+  <script src="<%= JS_PATH %>app.js"></script>
+<% include ../../../common/templates/functions/_addScripts -%>
+</head>
+
+<body class="<%= PAGE_ID %> <% include ../../../common/templates/functions/_addBodyClasses -%>">
+
+<% include ../components/_header %>
+
+  <div class="contents">

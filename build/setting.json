@@ -1,0 +1,10 @@
+{
+  "ssi": false,
+
+  "minify": {
+    "html": true,
+    "css": true,
+    "js": true,
+    "images": true
+  }
+}

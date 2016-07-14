@@ -1,0 +1,47 @@
+/**
+ * Name: _default.scss
+ */
+
+body {
+  color: $FONT_COLOR;
+  font-size: $FONT_SIZE;
+  font-family: $FONT_FAMILY;
+  background: $BASE_COLOR;
+}
+
+a {
+  color: $LINK_COLOR;
+  line-height: $LINE_HEIGHT;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p,ul,ol,li {
+  margin: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  line-height: $LINE_HEIGHT;
+  font-weight: normal;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+dl {
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+/**
+ * Name: mixins/_opacity.scss
+ */
+ 
+@mixin opacity($opacity) {
+  $opacityPercentage: $opacity * 100;
+  opacity: $opacity;
+  filter: alpha(opacity=$opacityPercentage);
+  -ms-filter: "alpha(opacity=#{$opacityPercentage})";
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  zoom:1;
+}

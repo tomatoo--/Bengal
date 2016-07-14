@@ -1,0 +1,7 @@
+/**
+ * Name: mixins/_fontSize.scss
+ */
+ 
+@mixin fontSize($fontSize, $baseFontSize: $FONT_SIZE){
+  font-size: percentage($fontSize / $baseFontSize);
+}

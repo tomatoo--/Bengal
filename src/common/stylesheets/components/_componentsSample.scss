@@ -1,0 +1,37 @@
+/**
+ * components 設計例
+ */
+
+//　Block
+//　components名はファイル名と同じになるようにする
+.componentsSample {
+  // $nameを定義して、スコープ内で使い回せるようにしておく
+  $name: #{&};
+
+  border: 1px solid #000;
+
+  // Element
+  // Elementは_でぶら下げる
+  // ぶら下げる個数は1階層までとする
+  &_element1 {
+    @include fontSize(12px);
+    color: #000;
+  }
+  // 単語の区切りはキャメル記法で記述
+  &_elementHoge {
+  }
+
+  // Modifier
+  // Modifierは-でぶら下げる
+  &-a {
+    // 親参照セレクタ（&）を使えない場合は、$nameを代用して使う
+    #{$name}_element1 {
+      color: #f00;
+    }
+  }
+  &-b {
+    #{$name}_element1 {
+      color: #0f0;
+    }
+  }
+}
