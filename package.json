@@ -12,7 +12,7 @@
     "build": "./build/scripts/build.sh",
     "release": "./build/scripts/release.sh"
   },
-  "author": "FUTUREK",
+  "author": "tomatoo--",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.2.1",
