@@ -1,4 +1,4 @@
-# Bengal v1.0.0
+# Bengal v1.0.0-alpha.0
 
 Frontend's Boilerplate
 
